@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/sh
 set -e -u -o pipefail
 cd $GITHUB_WORKSPACE
-bash -c "$*"
+sh -c "$*"
