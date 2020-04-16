@@ -10,4 +10,4 @@ RUN rustup component add clippy rustfmt && \
     rm -rf /var/cache/apk/*
 
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/bin/ash", "/entrypoint.sh"]
